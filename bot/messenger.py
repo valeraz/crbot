@@ -29,7 +29,7 @@ class Messenger(object):
 
     def write_greeting(self, channel_id, user_id):
         greetings = ['Hi', 'Hello', 'Nice to meet you', 'Howdy', 'Salutations']
-        txt = '{}, <@{}>!'.format(random.choice(greetings), user_id)
+        txt = '{}, <@{}>!!!'.format(random.choice(greetings), user_id)
         self.send_message(channel_id, txt)
 
     def write_prompt(self, channel_id):
